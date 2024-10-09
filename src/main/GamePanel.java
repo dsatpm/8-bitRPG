@@ -1,11 +1,10 @@
 package main;
 
 import entity.Player;
+import java.awt.*;
+import javax.swing.JPanel;
 import object.SuperObject;
 import tile.TileManager;
-
-import javax.swing.JPanel;
-import java.awt.*;
 
 
 public class GamePanel extends JPanel implements Runnable {
@@ -97,6 +96,7 @@ public class GamePanel extends JPanel implements Runnable {
         player.update();
     }
 
+    @Override
     public void paintComponent(Graphics g) {
 
         super.paintComponent(g);
